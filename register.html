@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="register.css">
+    <title>Register page</title>
+</head>
+<body>
+    <form id="form"  class = "row g-3" method="post" action="register.php">
+        <div class = "continer">
+            <h2> #Register </h2>
+            <p><b> Register for connet with us </b></p>
+            <hr>
+            <div class="name-field mb-3 form-group">    
+                <label for="fname" class="form-label-sm">First name:</label>
+                <input type="text" id = "fname" name="fname" class="form-control form-control-sm">
+                <span id = "msg_name"></span>
+            </div>
+            <div class="name-field mb-3 form-group">        
+                <label for="lname" class="form-label-sm">Last name:</label>
+                <input type="text" class="form-control form-control-sm" id = "lname" name="lname">
+                <span id = "msg"></span>
+            </div>
+            <div class="name-field mb-3 form-group">
+                <label for="mail" class="form-label-sm">Email:</label>
+                <input type="email" id = "mail" class="form-control form-control-sm"name="mail">
+                <span id = "msg_email"></span>
+            </div>
+            <div class="name-field mb-3 form-group">
+                <label for="num" class="form-label-sm">Phone Number:</label>
+                <input type="tel" id = "num" class="form-control form-control-sm" name="nmm">
+                <span id = "msg_num"></span>
+            </div>
+            <div class="name-field mb-3 form-group">
+                <label for="dob" class="form-label-sm">Date of Birth:</label>
+                <input type="date" id = "dob" name="dob"  class="form-control form-control-sm">
+                <span id = "msg_date" ></span>
+            </div>
+            <div class="name-field mb-3 form-group">
+                <label for="gender" class="form-label-sm">Gender:</label>
+                <select name="gender" id="gender_val" class="form-control form-control-sm">
+                    <option class="first_option" value="default" disabled selected>Select Option </option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="others">Others</option>
+                </select>
+                <span id="msg_gen"></span>
+            </div>
+            <div class="name-field mb-3 form-group">        
+                <label for="pass1" class="form-label-sm">Password:</label>
+                <input type="password" class="form-control form-control-sm" id = "pass1" name="pass1">
+                <span id = "msg_pass1"></span>
+            </div>
+            <div class="name-field mb-3 form-group">        
+                <label for="pass2" class="form-label-sm">Conform Password:</label>
+                <input type="password" class="form-control form-control-sm" id = "pass2" name="pass2">
+                <span id = "msg_pass2"></span>
+            </div>
+            <div class="name-field mb-3 form-group">    
+                <input type="submit" vaule="" class="form-control form-control-sm" id="signin" name="signin" onclick="validate_form()">
+            </div>
+        </div>
+    </form>
+    <script src="register.js"></script>
+    
+
+</body>
+</html>
